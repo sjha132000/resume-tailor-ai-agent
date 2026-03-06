@@ -1,0 +1,9 @@
+streamlit
+pdfplumber
+python-dotenv
+scikit-learn
+sentence-transformers
+google-genai
+langgraph
+langchain-core
+torch

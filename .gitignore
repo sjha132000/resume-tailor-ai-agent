@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual env
+.venv/
+env/
+
+# Secrets
+.env
+
+# Data (your private project library)
+data/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Mac
+.DS_Store
