@@ -86,9 +86,9 @@ if generate_button:
         
 
         # ---------- ATS SCORE ----------
-        st.subheader("ATS Score")
+        st.subheader("Resume Match")
 
-        st.metric("Resume Match", f"{similarity_score:.2f}%")
+        st.metric("Similarity Score", f"{similarity_score:.2f}%")
 
         st.progress(float(similarity_score) / 100)
 
