@@ -16,6 +16,14 @@ with a tailored resume.
 
 ------------------------------------------------------------------------
 
+# Live Application
+
+The deployed application can be accessed here:
+
+https://resume-tailor-ai-agent.streamlit.app/
+
+------------------------------------------------------------------------
+
 ## Project Structure
 
 ```
