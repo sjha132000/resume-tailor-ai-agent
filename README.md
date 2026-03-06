@@ -16,8 +16,9 @@ with a tailored resume.
 
 ------------------------------------------------------------------------
 
-# Project Structure
+## Project Structure
 
+```
 resume-tailor-ai-agent/
 │
 ├── app.py
@@ -45,6 +46,8 @@ resume-tailor-ai-agent/
 │
 ├── requirements.txt
 └── README.md
+```
+
 ------------------------------------------------------------------------
 
 **File roles**
@@ -81,28 +84,42 @@ resume-tailor-ai-agent/
 
 `resume_analyzer.py`: Structured resume analysis
 
-# Architecture
+------------------------------------------------------------------------
 
-The system follows a multi-agent architecture where each agent
-performs a specific stage of the resume optimization pipeline.
+## Architecture
 
+The system follows a **multi-agent architecture** where each agent performs a
+specific stage of the resume optimization pipeline. Each agent receives a
+shared state object, updates it with new information, and passes it to the
+next agent in the workflow.
+
+```
 Resume PDF
-     ↓
+    │
+    ▼
 parser.py
-     ↓
+    │
+    ▼
 Resume Agent
-     ↓
+    │
+    ▼
 JD Agent
-     ↓
-Matcher Agent          → ATS Similarity Score
-     ↓
-Decision Agent         → Determine if tailoring is needed
-     ↓
-Project Selector Agent → Select relevant projects
-     ↓
-Tailor Agent           → Resume Rewriting
-     ↓
+    │
+    ▼
+Matcher Agent
+    │
+    ▼
+Decision Agent
+    │
+    ▼
+Project Selector Agent
+    │
+    ▼
+Tailor Agent
+    │
+    ▼
 Streamlit UI
+```
 
 ------------------------------------------------------------------------
 
@@ -164,7 +181,7 @@ GEMINI_API_KEY=your_api_key_here
 
 ------------------------------------------------------------------------
 
-## 4. Environment setup
+## 5. Run the application
 
 ``` bash
 streamlit run app.py
