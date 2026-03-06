@@ -9,7 +9,7 @@ env/
 # Secrets
 .env
 
-# Data (your private project library)
+# Data (private project library)
 data/
 
 # Streamlit
